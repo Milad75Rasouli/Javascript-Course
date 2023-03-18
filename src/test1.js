@@ -2,17 +2,17 @@
 //console.log('Hello world from external javascrip.')
 
 // it was usually used in old versions of javascript.
-var name = "Milad";
+var name1 = "Milad";
+let name2 = 'Milad'; // both can be used
+let vaild = true;
+let user;
 
-let number = 1122;
-//let number = 3322; // it's not allowed
+// it's undefined type
+console.log(typeof(vaild));
 
-const ID = 2;
-// ID = 22; // it's not allowed
+// 1-declration 2-name it! 3-assigment
+console.log(typeof(vaild));
 
-let result = ID + number;
-console.log(number);
-console.log(result);
-
-
+vaild = "ture";
+console.log(typeof(vaild));
 
