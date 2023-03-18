@@ -2,17 +2,13 @@
 //console.log('Hello world from external javascrip.')
 
 // it was usually used in old versions of javascript.
-var name1 = "Milad";
-let name2 = 'Milad'; // both can be used
-let vaild = true;
-let user;
+let username = "Milad";
+let userRol = "Admin";
 
-// it's undefined type
-console.log(typeof(vaild));
+const message = username + ' is ' + userRol;
+// after javascript version E6 we are allowed to use this insted the above line.
+const result = `${username} is ${Admin}`;
 
-// 1-declration 2-name it! 3-assigment
-console.log(typeof(vaild));
+console.log(message);
 
-vaild = "ture";
-console.log(typeof(vaild));
 
