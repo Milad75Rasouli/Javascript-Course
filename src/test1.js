@@ -6,8 +6,10 @@
 // functions. 
 
 
-function addProduct(){
-    console.log("product name")
+function addProduct(title= "Book 0", 
+    price= 10){
+    console.log(`Title: ${title}\
+     - Price: ${price}`)
 }
 
-addProduct()
+addProduct("Book 1")
