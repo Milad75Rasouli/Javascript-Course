@@ -1,8 +1,4 @@
-// arrays and objects
-
-// It's the best use-case of 
-// array and object.
-
+// JSON => Javascript Object Notaition.
 const products = [
     {
         ID: 1,
@@ -18,13 +14,14 @@ const products = [
     }
 ]
 
-products.push({
-    ID:3,
-    title: 'Car 3',
-    price: 80,
-    exists: true
-})
+// convert the variable to a JSON 
+// string of products
+const data = JSON.stringify(products)
+console.log(data);
 
-console.log(products);
+// convert a JSON string to an object
+const response = JSON.parse(data)
+
+console.log(response);
 
 
