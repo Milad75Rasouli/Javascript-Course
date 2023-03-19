@@ -1,11 +1,18 @@
-//arrays
+// objects
 
-const product = ['Book', 99, true, 'description:']
+//const product = ['Book', 99, true, 'description:']
 
-// destructuring in javascript
-const [title,price, ...others] = product
- 
+const product = {
+    title: "Book",
+    price: 20,
+    exists: true
+}
 
-console.log(title, price);
-console.log(others)
+// destructuring in map/ dictinary
+const {price} = product
+
+console.log(product.title);
+console.log(price);
+
+
 
