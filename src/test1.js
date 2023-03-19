@@ -1,19 +1,13 @@
-// conditions
+// Functions
 
-const price = 100
-const newPrice = 99
+//             _________
+// inputs --->| Function| ---> outputs
+// a good program was made by a lot of
+// functions. 
 
-// Note: Javascript is a 
-// case-sensitive language
-if(newPrice > price){
-    console.log('Discount has been added.')
-}
-else if(newPrice<price){
-    console.log(`New Price is ${newPrice}`)
-}
-else{
-    console.log('It is equal.')
+
+function addProduct(){
+    console.log("product name")
 }
 
-
-
+addProduct()
