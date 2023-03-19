@@ -8,8 +8,15 @@
 
 function addProduct(title= "Book 0", 
     price= 10){
-    console.log(`Title: ${title}\
-     - Price: ${price}`)
+    // it's not necessery to declar the
+    // result as let it can decuct it
+    let result =  `Title: ${title}\
+     - Price: ${price}`
+    return result
 }
 
-addProduct("Book 1")
+conclution = addProduct("Book 2")
+console.log(conclution)
+
+
+
