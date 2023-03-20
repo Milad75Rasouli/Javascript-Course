@@ -2,12 +2,26 @@
 // html file => document
 // html tags => elements
 
-const titleInput = document.getElementById("title")
-// it's recomended to use the below 
-// insted the above.
+const form = document.querySelector("#form")
+const titleInput = document.querySelector("#title")
 const priceInput = document.querySelector("#price")
-const div = document.querySelectorAll("div")
+const listViewer = document.querySelector("#productsViewer")
 
-console.log(titleInput)
-console.log(priceInput)
-console.log(div)
+const addProduct=(event)=>{
+    // it prevents from browser refreshing
+    event.preventDefault()
+    // a simple validation
+    if(priceInput.value.length === 0 ||
+        titleInput.value.length === 0 )
+        return
+    const productItem = document.createElement("li")
+    const productInfo = document.createTextNode(`${titleInput.value} - ${priceInput.value}`) 
+    productItem.appendChild(productInfo)
+    listViewer.appendChild(productItem)
+    titleInput.value = ""
+    priceInput.value = ""
+
+
+}
+form.addEventListener("submit",addProduct)
+
