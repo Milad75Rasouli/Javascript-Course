@@ -1,59 +1,33 @@
-// Array Methods
+// Class / constructor function
 
-const products = [
-    {
-        ID:1,
-        title: "Book 9",
-        price: 80,
-        exists: true
-    },
-    {
-        ID:2,
-        title: "Book 5",
-        price: 30,
-        exists: false
-    },
-    {
-        ID:3,
-        title: "Book 2",
-        price: 80,
-        exists: true
+// what's OOP?
+// we always declear some featurs for
+// an object and whenever we need it, 
+// we make an object from it.
+// it helps us to reuse a block of code
+// and optimise our program.
+
+// Note: we alway declar constructor
+// function in Pascal form.
+function Product(title, price){
+    // when we use "this" this means
+    // it's a property for Product.
+    this.title = title
+    this.price = price
+    
+    //it's not a function it's a method
+    this.productInfo1= function(){
+        return `Title:${this.title}\
+        Price:${this.price}`
     }
-]
 
+    // it's witten by arow function
+    this.productInfo2= ()=>
+        `Title:${this.title}\
+        Price:${this.price}`
+}
 
-const f=()=> console.log
-("a message from arrow function")
-f()
-f1 = ()=>console.log
-("a message from unname arrow function")
-f1()
-
-// forEach
-console.log("Foreach method!")
-products.forEach((item)=>{
-    const {title} = item
-    console.log(title)
-})
-
-// map 
-console.log("map method!")
-const productPrices = products.map((item)=>{
-    const {price} = item
-    return price; // the main diffrence between 
-    // map and foreach is in map we can return something.
-    // one more thing, in map the result is an array, but
-    // in foreach the result is a string.
-})
-console.log(productPrices)
-
-// filter
-console.log("filter method!")
-const productExist = products.filter((item)=>{
-
-    return item.exists === true
-})
-console.log(productExist)
-
-
-
+let good = new Product("Book 1", 444)
+result = good.productInfo2()
+console.log(good)
+console.log(result)
