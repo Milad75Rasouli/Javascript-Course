@@ -3,17 +3,11 @@
 // html tags => elements
 
 const titleInput = document.getElementById("title")
-const priceInput = document.getElementById("price")
-// document.getElementsByClassName("Myclass") // it gives us like an array
-const inputs = document.getElementsByTagName("input")
-
-lengthOfElements = inputs.length
-for(let loop=0;loop<lengthOfElements;loop++){
-    let element = inputs[loop]
-    element.setAttribute("Placeholder",`text ${loop}`)
-    console.log(element)
-}
+// it's recomended to use the below 
+// insted the above.
+const priceInput = document.querySelector("#price")
+const div = document.querySelectorAll("div")
 
 console.log(titleInput)
 console.log(priceInput)
-
+console.log(div)
